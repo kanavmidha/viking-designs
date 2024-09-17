@@ -57,7 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // api request
-            fetch('http://localhost:5500/send-email', {
+
+            const hostname = window.location.hostname
+
+            const baseUrl = new URL(`https://${hostname}`)
+
+            fetch(`${baseUrl}/send-email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

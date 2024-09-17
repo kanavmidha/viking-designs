@@ -7,9 +7,9 @@ const app = express()
 
 // middleware to parse json req bodies
 app.use(express.json())
-app.use(cors({
-    origin: 'http://127.0.0.1:5500'
-}))
+// app.use(cors({
+//     origin: 'http://127.0.0.1:5500'
+// }))
 
 // POST req to send email
 
@@ -52,7 +52,7 @@ app.post('/send-email', (req, res) => {
 
 })
 
-const PORT = process.env.PORT || 5500;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 5500;
+// app.listen(PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
+// });
