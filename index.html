@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <!-- stylesheet -->
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +18,8 @@
      <script src="/js/main.js" defer></script>
 </head>
 <body class="font-sans">
-    <header>
-        <div class="flex flex-row justify-between items-center bg-black p-4 lg:p-8">
+    <header class="bg-black">
+        <div class="flex flex-row justify-between items-center p-4 lg:p-8 xl:max-w-[80%] xl:mx-auto">
             <h1 class="font-heading text-[2rem] pl-4">
                 <a href="/"><svg class= "w-12 fill-white" viewBox="0 0 638.51 654.01">
                     <g id="Layer_2" data-name="Layer 2">
@@ -44,7 +45,7 @@
                     </svg>
                 </button>
                 <nav id="primary-nav" class="absolute text-right w-screen top-24 right-0 text-[1.5rem] font-bold bg-white h-0 transition-all duration-[500ms] overflow-hidden md:static md:h-fit md:bg-black md:text-white md:text-base md:w-fit md:font-normal">
-                    <ul class="*:p-4 md:flex md:flex-row md:*:p-2">
+                    <ul class="links *:p-4 md:flex md:flex-row md:*:p-2">
                         <li><a href="/#services">Website Design</a></li>
                         <li><a href="/#services">Graphic Design</a></li>
                         <li><a href="/#services">SEO</a></li>
@@ -59,8 +60,8 @@
     <main>
         
         <section class="h-[70vh] pt-[4rem] px-6 md:px-10 bg-black text-white">
-            <div class="lg:max-w-[30rem]">
-                <h2 class="font-bold text-[1.8rem]">Conquering the Digital Frontier with Bold, Strategic, and Resilient Web Solutions!</h2>
+            <div class="lg:max-w-[30rem] xl:max-w-[80%] xl:mx-auto">
+                <h2 class="font-bold text-[1.8rem] xl:text-5xl/[1.5] xl:w-2/3">Conquering the Digital Frontier with Bold, Strategic, and Resilient Web Solutions!</h2>
                 <p class="text-lg py-4 font-semibold">Contact us today to give your business an unfair advantage.</p>
                 <a class="mt-4 py-2 px-4 rounded-lg w-fit text-black bg-yellow-400 text-lg font-bold flex flex-nowrap items-center" href="contact.html">Contact Us!
                     <svg class="arrow w-6 ml-2" viewBox="0 0 16 16">
@@ -80,13 +81,13 @@
             </path>
         </svg>
 
-        <div class="px-6 lg:px-10">
+        <div class="px-6 lg:px-10 xl:max-w-[80%] xl:mx-auto">
             <section id="about" class="mb-14 mt-14 lg:mb-28 lg:grid lg:grid-cols-12 lg:grid-rows-8">
                 <figure class="hidden lg:block lg:col-span-6 lg:row-span-12">
                     <img src="img/about-us.jpg" alt="a cartoonish person looking at his goal through a telescope">
                     <figcaption class="text-[10px]"><a href="https://www.freepik.com/free-vector/business-vision-prediction-forecasting-career-opportunities-monitoring-job-perspectives-searching-strategy-planning-leadership-motivation_12083053.htm#query=vision&position=0&from_view=keyword&track=ais_hybrid&uuid=9f2b3675-f050-4d3d-80d2-315a878de92a">Image by vectorjuice</a> on Freepik</figcaption>
                 </figure>
-                <h2 class="font-heading text-[2rem] lg:col-start-7 lg:col-end-12">About Us</h2>
+                <h2 class="font-bold text-[2rem] xl:text-[2.5rem] lg:col-start-7 lg:col-end-12">About Us</h2>
                 <div class="lg:row-start-2 lg:col-start-7 lg:col-end-13 lg:row-span-7">
                     <h3 class="font-bold text-[1.5rem] mt-4 mb-2">Our Vision and Mission</h3>
                     <p class="text-lg">At Viking Design, we are driven by a passion for creating digital experiences that empower businesses to thrive online. Just as the Vikings were known for their exploration and innovation, we approach every project with a bold, strategic
@@ -94,7 +95,7 @@
                     <p class="text-lg mt-2">Our team specializes in Website Design, Graphic Design, Animations, and SEO, combining creativity with technical expertise to deliver solutions that are both visually stunning and highly functional.</p>
                     <p class="text-lg mt-2">Whether you're looking to launch a new website or elevate your brand's online presence, Viking Design is your trusted partner in conquering the digital frontier.</p>
                 </div>
-                <a class="mt-6 py-2 px-4 rounded-lg w-fit text-black bg-yellow-400 text-lg font-bold flex flex-nowrap items-center lg:col-start-7 lg:row-start-8 lg:col-span-3"
+                <a class="mt-6 py-2 px-4 rounded-lg w-fit text-black bg-yellow-400 text-lg font-bold flex flex-nowrap items-center lg:col-start-7 lg:row-start-8 lg:col-span-3 h-fit"
                     href="contact.html">Connect with Us!
                     <svg class="arrow w-6 ml-2" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -105,7 +106,7 @@
             <section id="services" class="mb-14 lg:mb-28">
                 <div class="lg:flex flex-row justify-between">
                     <div class="lg:max-w-[30rem]">
-                        <h2 class="font-heading text-[1.8rem] lg:col-start-7 lg:col-end-12">Our Services</h2>
+                        <h2 class="font-bold text-[1.8rem] xl:text-[2.5rem] lg:col-start-7 lg:col-end-12">Our Services</h2>
                         <p class="text-lg mt-2">At Viking Designs, we offer a full range of creative and digital services designed to elevate your online presence. From eye-catching website designs to powerful SEO strategies, our services are tailored to help your brand stand out and succeed in the digital landscape.</p>
                         <a class="mt-6 py-2 px-4 rounded-lg w-fit text-black bg-yellow-400 text-lg font-bold flex flex-nowrap items-center"
                             href="contact.html">Get a Quote!
@@ -164,7 +165,7 @@
             <section class="mb-14 lg:mb-28">
                 <div class="lg:flex flex-row justify-between">
                     <div class="lg:max-w-[28rem]">
-                        <h2 class="font-heading text-[1.8rem]">Our Process</h2>
+                        <h2 class="font-bold text-[1.8rem] xl:text-[2.5rem]">Our Process</h2>
                         <p class="text-lg my-4"> Our process at Viking Design is simple and personalized to fit your unique needs. As your dedicated web design partner, we're with you every step of the way—from the first consultation to the final touches of your website. We focus on understanding your vision and aligning each stage of the project to meet your goals, ensuring a smooth and collaborative experience from start to finish.</p>
                         <a class="mt-6 py-2 px-4 rounded-lg w-fit text-black bg-yellow-400 text-lg font-bold flex flex-nowrap items-center"
                             href="contact.html">Start your Project!
@@ -231,17 +232,17 @@
                 </div>
             </section>
             <section class="mb-14 lg:mb-28">
-                <h2 class="font-heading text-[1.8rem]">Our Team</h2>
-                <div class="lg:flex flex-row justify-evenly lg:*:max-w-[25rem]">
+                <h2 class="font-bold text-[1.8rem] xl:text-[2.5rem]">Our Team</h2>
+                <div class="lg:flex flex-row justify-evenly gap-14 lg:*:w-1/2">
                     <!-- <h3>Meet our resilient creators</h3> -->
                     <div class="flex flex-col my-4">
-                        <h4 class="text-[1.5rem] font-bold mb-1">Kanav Midha</h4>
+                        <h4 class="text-[1.5rem] xl:text-[1.8rem] font-bold mb-1">Kanav Midha</h4>
                         <span class="font-bold text-md">- Design Manager</span>
                         <span class="font-bold text-md mb-2">- Diploma in Web Design and Development</span>
                         <p class="text-lg">As the Design Manager at Viking Design, I'm thrilled to bring creativity and expertise to every project we undertake! My role involves turning innovative ideas into beautifully designed realities, ensuring each project reflects your unique brand. I'm excited to collaborate with you and bring your digital vision to life!</p>
                     </div>
                     <div class="flex flex-col my-4">
-                        <h4 class="text-[1.5rem] font-bold mb-1">Vaibhav Sagar</h4>
+                        <h4 class="text-[1.5rem] xl:text-[1.8rem] font-bold mb-1">Vaibhav Sagar</h4>
                         <span class="font-bold text-md">- Project Manager</span>
                         <span class="font-bold text-md mb-2">- Master of Engineering in Engineering Management</span>
                         <p class="text-lg">As the Project Manager at Viking Design, I'm here to make sure your project sails smoothly from start to finish! My goal is to keep everything on track, ensuring we meet deadlines, stay within budget, and most importantly, bring your vision to life I'm excited to work together and make your project a success!</p>
@@ -250,26 +251,27 @@
             </section>
         </div>
     </main>
-    <footer>
-        <svg viewBox="0 0 1000 100">
-            <path opacity="0.5"
-                d="M1000 99.7001L1000 7.62939e-05C938 30.7001 877.6 51.0001 795 33.7001C711.2 16.1 634.5 13.3 555 45.7C501 67.7 445 71.7 382 55.7C309.063 35.9458 231.973 37.682 160 60.7C105 77.7 49.7 97.6 1.03159e-06 87.9L0 99.7L1000 99.7001Z"
-                fill="black" />
-            <path
-                d="M1000 99.7001L1000 25.0001C938 55.7001 877.6 71.0001 795 53.7001C711.2 36.1 634.5 28.3 555 60.7C501 82.7 445 81.7 382 65.7C305.5 46.3 235.5 42.4 160 65.7C105 82.7 49.7 97.6 1.03159e-06 87.9L0 99.7L1000 99.7001Z"
-                fill="black" />
-        </svg>
 
-        <div class="bg-black p-4 text-white lg:px-8">
+    <svg viewBox="0 0 1000 100">
+        <path opacity="0.5"
+            d="M1000 99.7001L1000 7.62939e-05C938 30.7001 877.6 51.0001 795 33.7001C711.2 16.1 634.5 13.3 555 45.7C501 67.7 445 71.7 382 55.7C309.063 35.9458 231.973 37.682 160 60.7C105 77.7 49.7 97.6 1.03159e-06 87.9L0 99.7L1000 99.7001Z"
+            fill="black" />
+        <path
+            d="M1000 99.7001L1000 25.0001C938 55.7001 877.6 71.0001 795 53.7001C711.2 36.1 634.5 28.3 555 60.7C501 82.7 445 81.7 382 65.7C305.5 46.3 235.5 42.4 160 65.7C105 82.7 49.7 97.6 1.03159e-06 87.9L0 99.7L1000 99.7001Z"
+            fill="black" />
+    </svg>
+
+    <footer class="bg-black text-white">
+        <div class="p-4 lg:px-8 xl:max-w-[80%] xl:mx-auto">
             <div class="mb-6 lg:max-w-[30rem]">
-                <h2 class="text-[1.5rem] font-heading mb-2"><a href="/">Viking Designs</a></h2>
+                <h2 class="text-[1.5rem] xl:text-[2rem] font-bold mb-2"><a href="/">Viking Designs</a></h2>
                 <p>Viking Designs is a Canada based company that provides solutions to all your marketing needs. Be it a logo or a website, we are here to leverage our skills to help your business grow.</p>
             </div>
-            <div class="md:flex md:flex-row md:justify-evenly">
+            <div class="md:flex md:flex-row md:justify-between pt-4">
                 <div class="mb-6">
                     <h3 class="text-xl font-bold mb-2">Our Services</h2>
                     <nav>
-                        <ul class="*:mb-2">
+                        <ul class="links *:mb-2">
                             <li><a href="/#services">Website Design</a></li>
                             <li><a href="/#services">Graphic Design</a></li>
                             <li><a href="/#services">SEO</a></li>
@@ -279,7 +281,7 @@
                 <div class="mb-6">
                     <h3 class="text-xl font-bold mb-2">About Us</h3>
                     <nav>
-                        <ul class="*:mb-2">
+                        <ul class="links *:mb-2">
                             <li><a href="/#about">Our Vision and Mission</a></li>
                             <li><a href="/works.html">Our Work</a></li>
                             <li><a href="/contact.html">Contact</a></li>
@@ -296,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="w-fit mx-auto text-sm">
+            <div class="w-fit mx-auto text-sm mt-4">
                 <span>&copy;2024 Viking Designs</span>
             </div>
         </div>
