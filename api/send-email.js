@@ -1,19 +1,23 @@
 require('dotenv').config();
-const express = require('express')
+// const express = require('express')
 const nodemailer = require('nodemailer')
-const cors = require('cors')
+// const cors = require('cors')
 
-const app = express()
+// const app = express()
 
 // middleware to parse json req bodies
-app.use(express.json())
+// app.use(express.json())
 // app.use(cors({
 //     origin: 'http://127.0.0.1:5500'
 // }))
 
 // POST req to send email
 
-app.post('/send-email', (req, res) => {
+module.exports = async (req, res) => {
+
+    if(req.method !== 'POST') {
+        return res.status(405).json({message: 'Only POST requests allowed.'})
+    }
     
     const { name, email, phone, service, message } = req.body
 
@@ -50,7 +54,7 @@ app.post('/send-email', (req, res) => {
         return res.status(500).json({message: 'failed'})
     }
 
-})
+}
 
 // const PORT = process.env.PORT || 5500;
 // app.listen(PORT, () => {
