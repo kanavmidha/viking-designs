@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 return response.json()
             }).then((data) => {
-                console.log(data)
+                // console.log(data)
                 alert('Message sent successfully! We will get back to you very soon.')
             }).catch((error) => {
-                console.log(error)
+                // console.log(error)
             })
         }
     })

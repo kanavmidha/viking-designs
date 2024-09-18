@@ -47,7 +47,7 @@ module.exports = async (req, res) => {
     try {
         transporter.sendMail(mailOptions, (error) => {
             if(error) {
-                console.log('error:', error.message)
+                // console.log('error:', error.message)
                 return res.status(500).json({ message: 'failed' })
             }
             
@@ -55,7 +55,7 @@ module.exports = async (req, res) => {
         })
 
     } catch (error) {
-        console.log(error)
+        // console.log(error)
 
         return res.status(500).json({message: 'failed'})
     }
